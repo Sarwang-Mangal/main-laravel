@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::domain('da.adlynk.in')->group(function () {
+Route::domain('main-laravel.test')->group(function () {
     Route::get('/', [App\Http\Controllers\Caller\LoginController::class, 'index']);
     Route::get('login', [App\Http\Controllers\Caller\LoginController::class, 'index'])->name('login');
     Route::post('login', [App\Http\Controllers\Caller\LoginController::class, 'validateUser']);
